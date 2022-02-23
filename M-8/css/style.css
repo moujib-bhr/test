@@ -1,0 +1,208 @@
+@font-face {
+    font-family: titre;
+    src: url("../fonts/BodegaSans_Black.ttf");
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image: url("../img/bg_body.svg");
+    background-color: #444444;
+}
+/********************header************************/
+header{
+    background: linear-gradient(130deg,
+white 50% ,    #333333 50%);     
+}
+header>div,nav{
+    display: inline-block;
+    width: 50%;
+}
+nav>a{
+    display: block;
+    margin: 20px 0;
+    padding-left: 45%;
+    text-decoration: none;
+}
+header>div>img:hover{
+    transform: scale(1.5); 
+}
+nav>a:hover{
+    color: orange;
+    transform: scale(1.3); 
+}
+nav,h1,h2,h3,h4{
+    font-family: titre;
+}
+h1{
+    font-size: 4rem;
+}
+nav>a,h3,h4{
+    font-size: 2.5rem;
+}
+a{
+    font-size: 1.4rem;
+}
+/*********************main************************/
+main{
+    max-width: 1500px;
+    margin: auto;
+}
+h1,section,footer,header>div,nav{
+    text-align: center;
+}
+section>article{
+    width: 22.5%;
+    margin: 0 15px;
+    background-color: white;
+    border: 2px solid gray;
+    padding: 0 25px 30px 25px;
+}
+article>img{
+    width: 100%;
+}
+article>a{
+    display: block;
+    background-color: orange;
+    text-decoration: none;
+    padding: 10px 0;;
+}
+main>article>div,video,section>article{
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+main>article>div,video{
+    width: 50%;
+    margin-top: 20px;
+    padding:0 10px;
+}
+main>article>div>p:first-child{
+   margin: 0;
+}
+i{
+    font-size: 3rem;
+    margin: 40px;
+}
+.dev{
+    opacity: 0.1;
+    box-shadow: 5px 5px 10px black;
+    color: black;
+    border:none;
+    padding:1%;
+}
+h2{
+    border: 3px solid rgba(8, 8, 8, 0.1);
+    border-bottom: none;
+    padding: 5px;
+    text-align: left;
+    margin-left: 40px;
+    font-size: 3rem;
+}
+p{
+    font-size: 1.4rem;
+}
+main span,hr{
+    color: orange;
+}
+/******************footer*********************/
+footer{
+    margin:0 6%;
+}
+footer>div>a{ 
+    margin:0 20px;
+}
+footer>img{
+    margin-top: 50px;
+    width: 50px;
+}
+footer>p>a,footer>div>a,footer,h1,h2,nav>a,main>article>div,article>a{
+    color: white;
+}
+footer>p>span{
+    text-decoration: underline;
+}
+@media screen and (max-width:1024px) and ( min-width:768px) {
+    body{
+        margin: 4%;
+    }
+    main>article>div,video,section>article{
+        display: block;
+        margin: auto;
+        width: 80%;
+        margin-top: 15px;
+    }
+    main>article>div>p{
+        text-align: center;
+    }
+    i{
+        display: inline-block;
+        width: 90%;
+        text-align: center;
+    }
+    footer{  
+        margin-top: 10%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+    .dev{
+        display: none;
+    }
+    h2{
+        border-right: none;
+        margin-right: 40px;
+        margin-left: 75px;
+    }
+}
+@media screen and (max-width:767px){
+    body{
+        margin: 8%;
+    }
+    header>div,nav{
+        display: block;
+        width: 100%;
+    }
+    header{
+        padding: 50px 0 20px 0;
+        background: linear-gradient(153deg,
+        white 50% ,#333333 50%);     
+    }
+    nav>a:first-child{
+        padding-top: 40px;
+    }
+    nav>a{
+        margin: 45px 0;
+    }
+    h1{
+        margin : 0 10%;
+    }
+    .flexslider{
+        border : 14px solid white;
+    }
+    h2{
+        padding-left: 50px;
+        margin-left: 1px;
+        padding-right: 30%;
+        border-right: none;
+    }
+    main>article>div,video,section>article{
+        display: block;
+        margin: auto;
+        width: 80%;
+        margin-top: 15px;
+    }
+    main>article>div>p{
+        text-align: center;
+    }
+    i{
+        display: block;
+        width: 90%;
+        margin: 20px 0;
+        text-align: center;
+        font-size: 4rem;
+    }
+    footer{  
+        padding: 9%;
+        margin-top: 10%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+}
